@@ -15,7 +15,7 @@
             ?>
         <div class="movie-card">
             <img src="assets/images/movie_posters/<?php echo $row['movieid']; ?>.jpg" class="poster-img" />
-            <center><button id="movie-detail-btn">Watch</button></center>
+            <center><button id="watch">Watch</button></center>
             <div class="info">
                 <h2><?php echo $row['title']; ?></h2>
                 <div class="other-details">
