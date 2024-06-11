@@ -50,7 +50,7 @@ cd movie-website
 #Set up the database:
 
 Import the provided SQL file (moviedatabase.sql) into your MySQL server.
-Update the database connection details in the PHP configuration file (config.php).
+Update the database connection details in the PHP configuration file (includes/db.php).
 
 #Start the server:
 
