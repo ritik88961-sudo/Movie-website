@@ -1,0 +1,456 @@
+/* ====================================================================================================== */
+/* Body Style Start*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(43, 41, 41);
+}
+/* Body Style End */
+
+/* ====================================================================================================== */
+
+/* Header Style */
+header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  height: 50px;
+}
+.brand-img {
+  position: absolute;
+  display: inline-block;
+  top: 2px;
+}
+.desktoplogo {
+  width: 200px;
+  cursor: pointer;
+}
+.mobilelogo {
+  cursor: pointer;
+  width: 200px;
+  position: absolute;
+  top: -38px;
+  left: -50px;
+}
+.user {
+  top: 5px;
+  position: absolute;
+  right: 70px;
+}
+.join-now {
+  background-color: rgb(228, 46, 46);
+  border: 0;
+  width: 150px;
+  padding: 8px;
+  font-size: 20px;
+  /* font-weight: bold; */
+  font-style: arial;
+  color: #ffff;
+  position: absolute;
+  cursor: pointer;
+  right: 120%;
+  border-radius: 3px;
+}
+.join-now:hover {
+  background-color: rgb(249, 3, 3);
+}
+.sign-in {
+  background-color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px;
+  color: #ffff;
+  font-size: 20px;
+  border: 1px solid rgb(108, 107, 107);
+  width: 100px;
+}
+.sign-in:hover {
+  background-color: rgb(110, 107, 107);
+}
+.logo {
+  display: none;
+}
+/* Header Style End */
+
+/* ====================================================================================================== */
+
+/* Movie Card Style Start */
+.title {
+  margin-left: 20px;
+  margin-top: -30px;
+}
+.title p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 50px;
+  color: #ffff;
+  font-style: normal;
+}
+.title span {
+  color: #ffff;
+  font-size: 20px;
+}
+
+#movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+  gap: 1rem;
+}
+
+.movie-card {
+  height: 450px;
+  background: #0d0c0c;
+  color: #ffff;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.movie-card h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+header input {
+  padding: 8px;
+  margin: auto;
+  width: 20%;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 30%;
+  top: 10px;
+  outline: none;
+}
+.info {
+  margin-left: 10px;
+}
+.info span {
+  font-weight: bold;
+}
+.industry-type {
+  width: 20%;
+  margin: auto;
+}
+.industry-type h1 {
+  color: #ffff;
+}
+/* Movie Card Style End */
+
+/* ====================================================================================================== */
+
+/* form-popup Page Style Start */
+
+.form-popup {
+  display: none;
+  border-radius: 10px;
+  background-color: #ffff;
+  border: 1px solid white;
+  margin: auto;
+  width: 35%;
+  height: 580px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1s;
+  top: 50px;
+}
+#loginpopup {
+  height: 320px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.form-header {
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 50px;
+  background-color: rgb(111 202 203);
+  border-bottom: 1px solid;
+}
+.form-header h1 {
+  margin-top: 0;
+}
+.form-header span {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  right: 10px;
+  font-size: 30px;
+  color: #ffff;
+}
+.form {
+  position: absolute;
+  left: 10px;
+  width: 90%;
+  text-align: left;
+}
+.form-popup input {
+  left: 0;
+  width: 100%;
+  border: 1px solid;
+  position: relative;
+  top: 5px;
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 5px;
+}
+.form-popup input:focus {
+  outline-style: solid;
+  outline-color: lightblue;
+  outline-width: 3.5px;
+}
+.form label {
+  font-weight: bold;
+  font-size: 18px;
+}
+.form button {
+  background-color: #2ac73f;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100px;
+  outline: none;
+  border: 0;
+  font-size: 20px;
+  color: #ffff;
+  font-weight: bold;
+}
+.mandatory {
+  color: #f60202;
+  font-weight: bold;
+  font-size: 18px;
+}
+/*  Form Style End */
+
+/* ====================================================================================================== */
+
+/* User area in Header style Start */
+.user-area {
+  position: relative;
+  right: 0;
+  text-align: center;
+  right: 50px;
+  width: 200px;
+}
+.user-profile {
+  cursor: pointer;
+  position: relative;
+  top: -10px;
+  text-align: center;
+  height: 50px;
+  right: 20%;
+  overflow: hidden;
+}
+.user-profile a {
+  text-decoration: none;
+  color: #ffff;
+}
+.user-img img {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #ffff;
+  right: -10px;
+  top: -5px;
+  position: absolute;
+}
+.logout {
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  background-color: #f60202;
+  right: -100px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.logout a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* User area in Header End */
+/* ====================================================================================================== */
+
+/* Movie Detail Popup style Start */
+.movie-detail-popup {
+  display: none;
+}
+.detail-popup {
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #ffff;
+  margin: auto;
+  padding: 10px;
+  width: 40%;
+  display: flex;
+  position: relative;
+}
+.detail-poster-img img {
+  height: 300px;
+  border-radius: 10px;
+}
+.movie-details {
+  /* color: #ffff; */
+  border-left: 1px solid;
+  padding: 20px;
+  border-width: 2px;
+  margin-left: 30px;
+}
+#movie-detail-btn {
+  background-color: #2ac73f;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 17px;
+}
+
+/* Movie Detail Popup style End */
+
+/* ====================================================================================================== */
+
+/* Footer Style Start */
+footer {
+  text-align: center;
+  background-color: #858585;
+  /* margin-bottom: -100px; */
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  /* top: 0; */
+  bottom: 0;
+}
+.copyright {
+  /* position: absolute; */
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffff;
+  margin-top: -10px;
+}
+
+/* ====================================================================================================== */
+
+/* User Manage Profile Style Start Here */
+
+.manage-profile {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  border: 1px solid;
+  padding: 20px;
+  background-color: #e1e0e0;
+  border-radius: 10px;
+}
+.manage-profile-form {
+  padding: 10px;
+  text-align: left;
+}
+.manage-profile-form label {
+  font-weight: bold;
+}
+.manage-profile-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+}
+.manage-profile-form input:focus {
+  /* outline: 2px; */
+  outline-style: solid;
+  outline-color: lightblue;
+  outline-width: 3.5px;
+}
+#update-btn {
+  background-color: #2ac73f;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100px;
+  outline: none;
+  border: 0;
+  font-size: 20px;
+  color: #ffff;
+  font-weight: bold;
+}
+/* ====================================================================================================== */
+
+/* Responsive Style Start */
+@media only screen and (max-width: 1024px) {
+  .form-popup {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .form-popup {
+    width: 80%;
+  }
+  header input {
+    display: none;
+  }
+}
+@media only screen and (max-width: 519px) {
+  .mobilelogo {
+    display: inline-block;
+  }
+  #movie-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5;
+  }
+  .movie-card {
+    height: 300px;
+  }
+
+  .user {
+    right: 10px;
+  }
+  .join-now {
+    width: 100px;
+  }
+  .sign-in {
+    width: 80px;
+  }
+  .form-popup {
+    width: 100%;
+  }
+  .user-profile {
+    right: 70px;
+    display: none;
+  }
+  .user-img img {
+    right: 50px;
+  }
+  .logout {
+    right: -40px;
+  }
+  .other-details {
+    display: none;
+  }
+}
+@media only screen and (min-width: 520px) {
+  .desktoplogo {
+    display: inline-block;
+  }
+}
+/* ====================================================================================================== */
