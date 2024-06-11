@@ -61,7 +61,7 @@ Sign Up/Login: Create a new account or log in with existing credentials.
 Search Movies: Use the search bar to find movies by title, actor, or language.
 Profile Management: Access your profile page to update personal information.
 
-Contributing
+#Contributing
 We welcome contributions! Please fork the repository and create a pull request with your changes. Make sure to update the documentation as needed.
 
 #License
