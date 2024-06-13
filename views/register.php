@@ -1,5 +1,4 @@
 
-<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 <div class="form-popup" id="registerpopup">
 	<div class="form-header">
 		<h1>SignUp Here</h1>
