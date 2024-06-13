@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 <div class="form-popup" id="loginpopup">
     <div class="form-header">
         <h1>Login Here</h1>
